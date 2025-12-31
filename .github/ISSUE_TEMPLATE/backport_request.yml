@@ -1,0 +1,41 @@
+name: "🔄 Backport Request"
+description: "Request an existing addon to be backported to an older WoW client."
+labels: ["backport", "needs-research"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Looking for an addon from a newer version of WoW to work on an older client? Let us know!
+  - type: input
+    id: addon_name
+    attributes:
+      label: "Original Addon Name"
+      placeholder: "e.g., WeakAuras"
+    validations:
+      required: true
+  - type: input
+    id: source_link
+    attributes:
+      label: "Original Source Link"
+      description: "Link to the CurseForge, GitHub, or WowInterface page of the original addon."
+      placeholder: "https://github.com/..."
+    validations:
+      required: true
+  - type: dropdown
+    id: target_version
+    attributes:
+      label: "Target Client Version"
+      description: "Which version of the WoW client do you need this for?"
+      options:
+        - "1.12.1 (Vanilla)"
+        - "2.4.3 (TBC)"
+        - "3.3.5a (WotLK / Project Ascension)"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Additional Notes"
+      description: "Any specific modules or settings that are critical for the backport?"
+    validations:
+      required: false

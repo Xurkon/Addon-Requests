@@ -1,0 +1,41 @@
+name: "🆕 New Addon Request"
+description: "Suggest a brand new addon idea or a major new feature."
+labels: ["new-addon", "needs-research"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest a new addon! Please provide as much detail as possible below.
+  - type: input
+    id: addon_name
+    attributes:
+      label: "Addon Name"
+      placeholder: "e.g., MyEpicLootTracker"
+    validations:
+      required: true
+  - type: dropdown
+    id: target_version
+    attributes:
+      label: "Target Client Version"
+      description: "Which version of the WoW client is this for?"
+      options:
+        - "1.12.1 (Vanilla)"
+        - "2.4.3 (TBC)"
+        - "3.3.5a (WotLK / Project Ascension)"
+    validations:
+      required: true
+  - type: textarea
+    id: features
+    attributes:
+      label: "Desired Features"
+      description: "List the core features you want this addon to have."
+      placeholder: "1. Track loot drops\n2. Show gold per hour\n..."
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: "Reference Links / Images"
+      description: "Links to similar addons, mockups, or videos that explain the idea."
+    validations:
+      required: false

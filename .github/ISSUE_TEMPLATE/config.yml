@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "💬 General Discussion"
+    url: "https://github.com/Xurkon/Addon-Requests/discussions"
+    about: "For general questions or chat that doesn't fit into a request template."
