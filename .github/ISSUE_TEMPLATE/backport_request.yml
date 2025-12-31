@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Looking for an addon from a newer version of WoW to work on an older client? Let us know!
+        Looking for an addon from a newer version of WoW to work on an older client? Let me know!
   - type: input
     id: addon_name
     attributes:
